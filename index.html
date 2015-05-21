@@ -9,7 +9,7 @@
 	<title>卓知教育官方网站</title>
 	<style type="text/css">
 		body{background-color:#DDDDDD}
-		.header{margin:0 auto;width:960px;height:45px;background-color:#FFFFFF;overflow:hidden;}
+		.header{margin:0 auto;width:960px;height:45px;background-color:#DDDDDD;overflow:hidden;}
 		.header p {margin:0;vertical-align:middle;font-size:30px;}
 		#nav_main{margin:0 auto;width:960px;height:45px;background-color:#999999;font:bold 90%/1;border:1.5px solid #CCCCCC;}
 		#nav_main ul {margin:0;list-style:none;}
@@ -17,7 +17,14 @@
 		#nav_main li a {display:block;float:left;padding:12px 20px 12px 18px;background-color:#AAAAAA;}
 		#nav_main li a:hover {background-color:#6666EE;}
 		#nav_main li p {display:block;float:left;background-color:#777777;width:1px;height:45px;margin:0}
-		#content_main{margin:0 auto;background-color:#FFFFFF;width:960px;min-height:1000px}
+		#content_main{position:relative;margin:0 auto;background-color:#FFFFFF;width:960px;min-height:1000px}
+		#cause{margin:0 auto;width:960px;background-color:none}
+		#cause_title{position:relative:margin:0 auto;width:960px;height:45px;background-color:none;overflow:hidden}
+		#cause_title ul {display:block;position:relative;margin:0 auto;list-style:none;width:380px;}
+		#cause_title li {display:inline}
+		#cause_title li a {display:block;float:left;padding:0px 20px 0px 18px;background-color:#DDDDDD}
+		#cause_title li a:hover{background-color:#6666EE}
+		#cause_img{margin:0 auto;text-align:center}
 	</style>
   </head>
   <body>
@@ -38,10 +45,20 @@
 	<!--内容-->
 	<div id="content_main">
 		<!--卓知课堂-->
-		<div>
+		<div id="cause" >
 			<div>卓知课堂</div>
-			<img src="" alt="法语"/>
-			<div>课堂</div>
+			<div id="cause_img">
+				<img src="images/french.jpg" alt="法语"/>
+			</div>
+			<div id="cause_title">
+				<ul>
+					<li><a>法语</a></li>
+					<li><a>日语</a></li>
+					<li><a>韩语</a></li>
+					<li><a>德语</a></li>
+					<li><a>英语</a></li>
+				</ul>
+			</div>
 		</div>
 		<!--课程资费-->
 		<div>
