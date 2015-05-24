@@ -35,18 +35,22 @@
 		#poweredby a {color:#999999}
 	</style>
 	<script>
-		function reinitIframe(){
-			var iframe = document.getElementById("content");
-			try{
-				var bHeight = iframe.contentWindow.document.body.scrollHeight;
-				var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-				iframe.height = Math.max(bHeight,dHeight);
-			}catch(ex)
-			{}
-		}
-
-		function onClickTest(){
-			alert("TTTTT");
+		function onNavItemClicked(navItem){
+			var contentFrame = document.getElementById("content");
+			switch(navItem){
+				case "home":
+					contentFrame.src="htmls/home.html";
+					break;
+				case "teachers":
+					contentFrame.src="htmls/teachers.html";
+					break;
+				case "res":
+					contentFrame.src="htmls/res.html";
+					break;
+				case "about":
+					contentFrame.src="htmls/about.html";
+					break;
+			}
 		}
 	</script>
   </head>
@@ -58,13 +62,13 @@
 	<!--导航-->
 	<div id="nav_main">
 		<ul>
-			<li onclick="onClickTest()"><a>首页</a></li>
+			<li onclick="onNavItemClicked('home')"><a>首页</a></li>
 			<li><p></p></li>
-			<li><a>卓知师资</a></li>
+			<li onclick="onNavItemClicked('teachers')"><a>卓知师资</a></li>
 			<li><p></p></li>
-			<li><a>资源下载</a></li>
+			<li onclick="onNavItemClicked('res')"><a>资源下载</a></li>
 			<li><p></p></li>
-			<li><a>关于卓知</a></li>
+			<li onclick="onNavItemClicked('about')"><a>关于卓知</a></li>
 		</ul>
 	</div>
 	<!--导航-->
@@ -72,7 +76,7 @@
 	<!--内容-->
 	<div id="content_border"><!--内容边框-->
 	<div id="content_bg"><!--内容背景-->
-		<iframe id="content" src="home.html" frameborder=0 scrolling="no" height=this.height onLoad=reinitIframe()>Test</iframe>	
+		<iframe id="content" src="htmls/home.html" frameborder=0 scrolling="no">Main Content</iframe>	
 	</div><!--内容背景-->
 	</div><!--内容边框-->
 	<!--内容-->
