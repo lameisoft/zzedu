@@ -4,5 +4,13 @@
 	</head>
 	<body>
 		关于卓知!
+		<script>
+			window.onload=function(){
+				var cHeight = Math.max(document.body.clientHeight,document.documentElement.clientHeight);
+				var sHeight = Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+				var height = Math.max(cHeight,sHeight);
+				parent.document.getElementById("content").height = height;
+			} 
+		</script>
 	</body>
 </html>
