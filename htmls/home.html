@@ -61,10 +61,14 @@
 				</div><!--课堂介绍-->
 			</div><!--课堂风采-->
 		</div>
-		<script type="text/javascript" src="../js-utils/calc-height.js">
-			window.onload=function(){ 
-			alert("haha")
-			setParentIframeHeight(document);}
+		<script>
+			window.onload=function(){
+				var cHeight = Math.max(document.body.clientHeight,document.documentElement.clientHeight);
+				var sHeight = Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+				var height = Math.max(cHeight,sHeight);
+				alert(height);
+				parent.document.getElementById("content").height = height;
+			} 
 		</script>
 	</body>
 </html>
