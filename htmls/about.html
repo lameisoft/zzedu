@@ -1,9 +1,75 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		关于卓知
-	</body>
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="Shortcut Icon" href="">
+	<title>卓知教育官方网站</title>
+	<style type="text/css">
+		/**整体背景*/
+		body{background-color:#DDDDDD;margin:0}
+
+		/**头部*/
+		.header{margin:0 auto;width:960px;height:45px;background-color:#DDDDDD;overflow:hidden;}
+		.header p {margin:0;vertical-align:middle;font-size:30px;}
+
+		/**导航*/
+		#nav_main{margin:0 auto;width:960px;height:45px;background-color:#999999;font:bold 90%/1;border:1.5px solid #555555;overflow:hidden}
+		#nav_main ul {list-style:none;margin:0 auto;padding:0}
+		#nav_main li {display:inline;}
+		#nav_main li a {display:block;float:left;padding:12px 20px 12px 18px;background-color:#AAAAAA;}
+		#nav_main li a:hover {background-color:#6666EE;cursor:pointer}
+		#nav_main li p {display:block;float:left;background-color:#777777;width:1px;height:45px;margin:0}
+
+		/**内容*/
+		#content_border{margin:0 auto;background-color:#FFFFFF;width:960px;overflow:hidden;border:1.5px solid #FFFFFF}
+		#content_bg{margin:3px;background-color:#DDDDDD;width:954px;overflow:hidden;border-radius:5px}
+		#content{margin:0px;width:100%;border-radius:5px;border:0px;padding:0;background-color:#0F0;}
+
+		/**底部*/
+		#footer{margin:0 auto;width:960px;height:50px;background-color:#FFFFFF;border:1.5px solid #FFFFFF;overflow:hidden}
+		#copyright{text-align:center;width:960px}
+		#poweredby{text-align:center;width:960px;color:#999999}
+		#poweredby a {color:#999999}
+
+		/**内容—可变部分*/
+	</style>
+  </head>
+  <body>
+	<!--头部-->
+	<div class="header"><p><i>卓知教育</i></p></div>
+	<!--头部-->
+
+	<!--导航-->
+	<div id="nav_main">
+		<ul>
+			<li onclick="index.html"><a>首页</a></li>
+			<li><p></p></li>
+			<li onclick="htmls/teachers.html"><a>卓知师资</a></li>
+			<li><p></p></li>
+			<li onclick="htmls/res.html"><a>资源下载</a></li>
+			<li><p></p></li>
+			<li onclick="htmls/about.html"><a>关于卓知</a></li>
+		</ul>
+	</div>
+	<!--导航-->
+
+	<!--内容-->
+	<div id="content_border"><!--内容边框-->
+	<div id="content_bg"><!--内容背景-->
+		<!--i<iframe id="content" src="htmls/home.html" frameborder=0 scrolling="no" onLoad="this.height=100px">Main Content</iframe>-->
+		卓知师资
+	</div><!--内容背景-->
+	</div><!--内容边框-->
+	<!--内容-->
+
+	<!--底部-->
+	<div id="footer">
+		<div id="copyright">&copy; 2012-2015 卓知教育</div><!--版权声明-->
+		<div id="poweredby">Powered by <a href="http://lameisoft.com">Lameisoft</a></div>
+	</div>
+	<!--底部-->
+  </body>
 </html>
