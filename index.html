@@ -52,6 +52,24 @@
 		#contact p {margin:0;padding:5px 0px 0px 13px}
 		#contact img{width:60%;height=width;margin:0 auto;padding:0}
 	</style>
+	<script type="text/javascript">
+		function onNavItemClicked(navItem){
+			switch(navItem){
+				case "home":
+					location.href = "index.html";
+					break;
+				case "teachers":
+					location.href="htmls/teachers.html";
+					break;
+				case "res":
+					location.href = "htmls/res.html";
+					break;
+				case "about":
+					location.href = "htmls/about.html";
+					break;
+			}
+		}
+	</script>
   </head>
   <body>
 	<!--头部-->
@@ -61,13 +79,13 @@
 	<!--导航-->
 	<div id="nav_main">
 		<ul>
-			<li onclick="index.html"><a>首页</a></li>
+			<li onclick="onNavItemClicked('home')"><a>首页</a></li>
 			<li><p></p></li>
-			<li onclick="htmls/teachers.html"><a>卓知师资</a></li>
+			<li onclick="onNavItemClicked('teachers')"><a>卓知师资</a></li>
 			<li><p></p></li>
-			<li onclick="htmls/res.html"><a>资源下载</a></li>
+			<li onclick="onNavItemClicked('res')"><a>资源下载</a></li>
 			<li><p></p></li>
-			<li onclick="htmls/about.html"><a>关于卓知</a></li>
+			<li onclick="onNavItemClicked('about')"><a>关于卓知</a></li>
 		</ul>
 	</div>
 	<!--导航-->
