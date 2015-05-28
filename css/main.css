@@ -11,17 +11,34 @@
 		.header{margin:0 auto;height:2em;line-height:2em;font-size:2em;overflow:hidden;}
 
 		/**导航*/
-		#nav_main{margin:0 auto;height:3em;background-color:#999999;font:bold 90%/1;border:1.5px solid #555555;min-height:80%;overflow:hidden}
+		#nav_main{margin:0 auto;height:3em;background-color:#999999;font:bold 90%/1;border:1.5px solid #555555;overflow:hidden}
 		#nav_main ul {list-style:none;margin:0 auto;padding:0;}
 		#nav_main li a {display:block;float:left;text-align:center;line-height:3em;height:3em;padding-left:2.2em;padding-right:2.2em;background-color:#AAAAAA;}
 		#nav_main li a:hover {background-color:#6666EE;cursor:pointer}
 		#nav_main li p {display:block;float:left;background-color:#777777;width:1px;height:2.6em;margin:0}
 
 		/**内容*/
-		#content_border{margin:0 auto;background-color:#EEEEFF;border:1.5px solid #EEEEFF;overflow:hidden}
+		#content_border{margin:0 auto;background-color:#EEEEFF;min-height:35em;border:1.5px solid #EEEEFF;}
 
 		/**底部*/
 		#footer{margin:0 auto;height:4.4em;background-color:#FFFFFF;border:1.5px solid #FFFFFF;overflow:hidden}
 		#copyright{text-align:center;width:100%}
 		#poweredby{text-align:center;width:100%;color:#999999}
 		#poweredby a {color:#999999;font-style:italic}
+		
+		/**分割线*/
+		#divider{margin:1em 1em 0 1em;height:1px;background-color:#DDDDDD;clear:both}
+	
+		/**表格通用格式*/
+		table{width:100%;margin:0;margin-top:0.8em;border:1px solid #DDDDDD;border-collapse:collapse}
+		th{border:1px solid #DDDDDD}
+		td{text-align:center;border:1px solid #DDDDDD}
+
+		/**咨询报名*/
+		#contact{margin:0 1em;}
+		#contact table {border:none;}
+		#contact td {width:33%;border:none;}
+		#contact_tel_qq{margin:0px;float:left;width:100%;}
+		#contact_wixin{margin:0px;float:left;width:100%;text-align:center;}
+		#contact_wixin img {width:60%;height;width;}
+		#contact_address{margin:0;width:100%}
