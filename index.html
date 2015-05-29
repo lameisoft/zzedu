@@ -60,6 +60,9 @@
 			<li><p></p></li>
 			<li onclick="onNavItemClicked('home')"><a>本站正在建设...</a></li>
 		</ul>
+		<!--显示时间-->
+		<div id="time"></div>
+		<script>setInterval("time.innerHTML = new Date().toLocaleString()",1000);</script>
 	</div><!--导航结束-->
 
 	<!--内容-->

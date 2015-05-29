@@ -16,6 +16,7 @@
 		#nav_main li a {display:block;float:left;text-align:center;line-height:3em;height:3em;padding-left:2.2em;padding-right:2.2em;background-color:#AAAAAA;}
 		#nav_main li a:hover {background-color:#6666EE;cursor:pointer}
 		#nav_main li p {display:block;float:left;background-color:#777777;width:1px;height:2.6em;margin:0}
+		#time{height:3em;line-height:3em;float:right;padding-right:1em}
 
 		/**内容*/
 		#content_border{margin:0 auto;background-color:#EEEEFF;min-height:35em;border:1.5px solid #EEEEFF;}
